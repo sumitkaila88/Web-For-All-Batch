@@ -1,0 +1,96 @@
+/* 
+CSS intro /
+How to include CSS files in browsers /
+browser and reset css /
+Cascade, Inheritance /
+Selectors/elements /
+Box Model /
+Short hand and long hand properties/
+containing block /
+Layouts  
+Padding 
+Margin 
+Borders 
+Specificity 
+Sizing units 
+Pseudo classes 
+Pseudo elements 
+ */
+/* universal selectors */
+/* element selector */
+/* id selector */
+/* class selector */
+/* attribute selector */
+/* combination selectors */
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: black;
+} */
+
+/* h1, h3 {
+   color: red;
+} */
+
+*, *::before, *::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+main {
+   width: 1000px;
+   margin: auto;
+}
+
+h1 {
+   width: 600px;
+   margin: auto;
+   color: #1e118f;
+}
+
+h2 {
+   padding: 8px 20px 10px;
+   margin-bottom: 5px;
+}
+
+li {
+   border: 5px solid;
+   padding: 5px;
+   margin-bottom: 5px;
+}
+
+#last {
+   margin-top: 40px;
+}
+
+p{
+   padding: 8px;
+   margin: 5px;
+}
+
+.containsChildren div > p {
+   background: #d1d6ff;
+}
+
+li ~ p {
+   padding: 10px;
+   color: red;
+   background: #d1d6ff;
+   border: 2px solid red;
+}
+
+span {
+   color: green;
+}
+
+p span {
+   color: pink;
+}
+
+#last + a {
+   color: #1e118f;
+}
