@@ -1,0 +1,100 @@
+/* reset css */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* variables */
+
+:root {
+    --blue: rgb(1, 102, 174);
+    --bgc: rgb(255, 250, 203);
+    --link: rgb(107, 75, 246);
+    --hover: rgb(55, 13, 243);
+}
+
+/* default styles */
+
+body {
+    font: italic small-caps bold 16px/1.2 cursive;
+    text-align: center;
+    color: var(--blue);
+}
+
+
+
+article {
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+}
+
+section {
+    padding: 1em 0;
+    border-bottom: 1px solid;
+    counter-increment: my-counter;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h1 {
+    font-size: 1.6em;
+    padding: 0.4em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: var(--bgc);
+    border-bottom: 1px solid;
+}
+
+h2, h3 {
+    padding: 0.5em;
+}
+
+h2{
+    font-size: 1.4em;
+}
+
+h2::before {
+    content: "0" counter(my-counter);
+    margin-right: 0.5rem;
+    font-size: 1.6em;
+}
+
+h2::after {
+    content: "👻";
+    margin-left: 0.5rem;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+a {
+    color: var(--link);
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+
+/* classes */
+
+.flex {
+    display: table;
+    text-align: left;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.left, .right {
+    display: table-cell;
+    padding: 0 5em;
+}
