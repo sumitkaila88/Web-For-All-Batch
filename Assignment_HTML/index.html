@@ -10,7 +10,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> 
 
 
-
+<!-- https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/HTML5.html -->
+<!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
 
 
 <!DOCTYPE html>
@@ -22,19 +23,70 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <h3>I am the navigation fot this page you can give links in a list within me to define a major navigation area of your web application</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="table.html">Table page</a></li>
+            <li><a href="imagelist.html">image List</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3>My name is <span>Sumit Kaila</span></h3>
+    </section>
+
+    <p><span>hello</span>
+    <strong>how are you</strong></p>
+    <h1>This is main heading</h1>
     <p id ="para1" class ="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id mollitia distinctio architecto error? Doloribus eius reiciendis quo, sequi quam autem. Dicta similique corporis placeat vel dolor quam aperiam quae voluptatibus!</p>
     <p id="para2" class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores odit fuga voluptatum corporis, voluptates optio rem iure nesciunt fugiat autem!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicinwkbdfhjgashgdasdgasjdgjg elit. Rem accusamus suscipit cumque.</p>
     <!-- the above is a para which explains -->
-    <b> - Bold text</b>
+        <b> - Bold text</b>
         <strong> - Important text</strong> 
         <i> - Italic text</i>
-        <em> - Emphasized text</em>
+        <em> - Emphasized <span>text</span></em>
         <mark> - Marked text</mark>
         <small> - Smaller text</small>
         <del> - Deleted text</del>
         <ins> - Inserted text</ins>
-        <sub class="paragraph c-paragraph j-paragraph"> - Subscript text</sub>
+        <sub> - Subscript text</sub>
         <sup> superscript</sup>
+
+        <p>My Name is <mark>Sumit Kaila <sub>(IT Engineer)</sub> </mark></p>
+        <p>cube of 2 is 2<sup>3</sup> =  <strong>8</strong>   12<sup>o</sup> </p>
+
+
+        <h3>Below are sectioning elements</h3>
+        <aside>Hi I am aside - Tangentialy dependent on some article </aside>
+        <header>I am header as a banner</header>
+
+        <article>
+            <h1>I am heading of individual article thus I can be repeated</h1>
+            <header>I am header not as a banner, I am a header for this article only</header>
+            <footer>I am not contentInfo of the page I am only a end info for this article </footer>
+        </article>
+
+        <main>I am main tag I will tell you about the most important area or main area of the page
+
+            <section> <div>I am a section as my name says I am a part of something big but I myself am a big area,</div> <div> this is right section</div></section>
+            
+
+        </main>
+
+        <ul>
+            <li>List item1</li>
+            <li>List item2</li>
+            <li>List item3</li>
+            <li>List item4</li>
+            <li>List item5</li>
+        </ul>
+    
+
+
+        <footer>I am info detail or contentInfo for this page</footer>
+
 </body>
 </html>
