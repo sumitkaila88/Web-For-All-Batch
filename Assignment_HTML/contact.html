@@ -4,16 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shri Somnath Dham</title>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main style = "text-align: center;">
-        <h1>SHIVGORAKSH !!!</h1>
-        <div style = "display: flex;justify-content: center;align-items: center; height: 80vh">
-            <h1>
-                This Website was Hacked, We are working on it to get Corrected, we will Launch back soon
-            </h1>
-        </div>
+    <main>
+        <h1>Contact Form Page</h1>
+        <form action="#" method="">
+            <div>
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" disabled>
+            </div>
+
+            <div>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div>
+                <label for="percentage">Enter you 12th Percentage</label>
+                <input type="number" name="percentage" id="percentage" placeholder="100" autofocus><span>%</span>
+            </div>
+            
+            <fieldset>
+                <legend>Select a preferred language</legend>
+            
+                <div>
+                  <label for="htaml">HTML</label>
+                  <input type="radio" id="htaml" name="language" value="html" checked>
+                </div>
+            
+                <div>
+                    <label for="css">CSS</label>
+                    <input type="radio" id="css" name="language" value="css">
+                </div>
+            
+                <div>
+                    <label for="js">JavaScript</label>
+                    <input type="radio" id="js" name="language" value="js">
+                </div>
+            </fieldset>
+
+            <fieldset disabled="disabled">
+                <legend>Select fav fruits items</legend>
+                <label for="mango">Mango</label>
+                <input type="checkbox" name="mango" id="mango" value="mango">
+
+                <label for="orange">Orange</label>
+                <input type="checkbox" name="orange" id="orange" value="orange">
+
+                <label for="grapes">Grapes</label>
+                <input type="checkbox" name="grapes" id="grapes" value="grapes">
+
+                <label for="kiwi">Kiwi</label>
+                <input type="checkbox" name="kiwi" id="kiwi" value="kiwi">
+            </fieldset>
+
+            <div>
+                <label for="books">Choose a book</label>
+                <select id="books" name="books" ><!-- add multiple, size="4", optgroup -->
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="react">React</option>
+                    <option value="angular">Angular</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="paragraph">Write something about yourself</label>
+                <textarea name="paragraph" id="paragraph" placeholder="My name is Sumit and I am..." cols="100" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="dob">Your DOB</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div>
+                <label for="month">Enter Current Month</label>
+                <input type="month" name="month" id="month">
+            </div>
+
+            <div>
+                <label for="currenttime">Enter Current Time</label>
+                <input type="datetime-local" name="currenttime" id="currenttime">
+            </div>
+
+            <div>
+                <label for="time">Select only time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+
+            <div>
+                <label for="week">Select a week:</label>
+                <input type="week" id="week" name="week">
+            </div>
+            
+            <div>
+                <label for="favcolor">choose your fav color</label>
+                <input type="color" name="favcolor" id="favcolor">
+            </div>
+
+            <div>
+                <label for="file">Choose a file</label>
+                <input type="file" name="file" id="file">
+            </div>
+
+            <div>
+                <p>I am hidden Input</p>
+                <input type="hidden" id="hello" name="hello" value="capture my hidden value">
+            </div>
+            
+            <div>
+                <label for="gsearch">Search Google:</label>
+                <input type="search" id="gsearch" name="gsearch">
+            </div>
+
+            <div>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+
+            <div>
+                <label for="linkedin">Add your linkedin URL:</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
+
+            <div>
+                <label for="range">Select a range for your fav number</label>
+                <input type="range" id="range" value="7" oninput="this.nextElementSibling.value = value">
+                <output name="result" for = "range">7</output>
+            </div>
+
+            <div>
+                <button type="button" onclick="console.log('logged')">Click Me!</button>
+            </div>
+
+            <div>
+                <p>On click of this image the form will be submitted</p>
+                <input type="image" src="images/images.jpeg" alt="image area" width="100" height="100">
+            </div>
+            
+            <div>
+                <input type="submit" value = "submit">
+                <input type="reset" value="Reset">
+            </div>
+
+
+            <footer>
+                <p>Practice more from <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">Here...</a></p>
+            </footer>
+
+        </form>
+
     </main>
 </body>
 </html>
