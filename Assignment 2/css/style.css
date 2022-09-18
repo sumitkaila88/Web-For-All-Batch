@@ -5,10 +5,13 @@
     padding: 0;
 }
 
+/* sdfwefesfsdf */
+
+
 /* variables */
 
 :root {
-    --blue: rgb(1, 102, 174);
+    --blue: rgb(1, 102, 174);   /*this is my theme color*/
     --bgc: rgb(255, 250, 203);
     --link: rgb(107, 75, 246);
     --hover: rgb(55, 13, 243);
