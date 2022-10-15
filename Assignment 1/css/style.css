@@ -24,16 +24,32 @@ Pseudo elements
 /* combination selectors */
 
 
+/* 
+Universal selector (selects every thing)
+
+Simple selectors (select elements based on tagname, id, class)
+
+Combinator selectors (select elements based on a specific relationship between them)
+space selector, direct child selector, adjacent sibling selector, generic sibling selector
+
+Pseudo-class selectors (select elements based on a certain state)
+
+Pseudo-elements selectors (select and style a part of an element)
+
+Attribute selectors (select elements based on an attribute or attribute value) */
+
+/* https://www.w3schools.com/css/css_attribute_selectors.asp */
+
+
+/* selector block declarations {property: value} */
+
 /* *{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    color: black;
+   margin: 0;
+   padding: 0;
 } */
 
-/* h1, h3 {
-   color: red;
-} */
+
+
 
 *, *::before, *::after {
    box-sizing: border-box;
@@ -41,10 +57,29 @@ Pseudo elements
    padding: 0;
 }
 
+
+body {
+   font-size: 16px;
+   color: black;
+}
+
+
+h1, h3 {
+   color: red;
+}
+
+h1::after {
+   content: '';
+}
+
+
+
+
 main {
    width: 1000px;
-   margin: auto;
+   margin: 50px auto;
 }
+
 
 h1 {
    width: 600px;
@@ -63,8 +98,14 @@ li {
    margin-bottom: 5px;
 }
 
+
 #last {
    margin-top: 40px;
+}
+
+.para {
+   background-color: green;
+   margin: 10px;
 }
 
 p{
@@ -93,4 +134,5 @@ p span {
 
 #last + a {
    color: #1e118f;
-}
+} 
+
